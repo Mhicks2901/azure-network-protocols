@@ -38,14 +38,32 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
     - Select the previously named resource group and virtual network
 - Part 2 Observing ICMP Traffic
    - Open up the remote desktop on your computer
+   <img src="https://i.imgur.com/b5SkxdR.png"/>
+   
    - Lets get the public IP address on the Windows 10 VM
+  <img src="https://i.imgur.com/xeFLSTn.png"/>
+  
    - Input that into our remote desktop app
    - While inside our Virtual machine we will install Wireshark
       - Click blue icon by search bar
-   - Within Wireshark, lets filter for ICMP traffic only
-   - Retrieve the private IP address of the Ubuntu VM and attempt to ping it from within the Windows 10 VM and observe ping requests and replies within WireShark
-   - From The Windows 10 VM, open command line or PowerShell and attempt to ping a public website such as www.google.com and observe the traffic in WireSharkObserve ping requests and replies within WireShark
-   - Initiate a perpetual/non-stop ping from your Windows 10 VM to your Ubuntu VM
+ <img src="https://i.imgur.com/cosP8Cq.png"/>
+ 
+   - Within Wireshark, lets filter for ICMP traffic only by typing ICMP in the search bar
+ <img src="https://i.imgur.com/FG5sqf2.png"/>
+
+   - Since ICMP is a protocol that is used to ping for internet connectivity to different hosts notice nothing is being displayed
+   - Retrieve the private IP address of the Ubuntu VM and open up Powershell to ping it from within the Windows 10 VM
+  <img src="https://i.imgur.com/LvqX1dI.png"/>
+  <img src="https://i.imgur.com/Vvv1j8F.png"/>
+  
+   - From the Windows 10 VM, use PowerShell to ping a public website such as www.google.com
+     - Observe ping requests and replies within WireShark
+   <img src="https://i.imgur.com/9MstXjl.png"/>
+
+   - Click the green button above the search bar to clear the search, and lets initiate a perpetual/non-stop ping from your Windows 10 VM to your Ubuntu VM
+     - Redo the same command an add a -t as this will continue to ping non stop
+     <img src="https://i.imgur.com/KsDZ0Jc.png"/>
+     
 - Part 3 Observing SSH Traffic
   - Back in Wireshark filter for SSH traffic
   - From your Windows 10 VM, SSH into your Ubuntu Virtual Machine via its private IP address
