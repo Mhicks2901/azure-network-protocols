@@ -37,8 +37,11 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
   - The second will be a Ubuntu Virtual Machine
     - Select the previously named resource group and virtual network
 - Part 2 Observing ICMP Traffic
-   - Use our remote deskptop to connect to our Windows 10 Virtual Machine
+   - Open up the remote desktop on your computer
+   - Lets get the public IP address on the Windows 10 VM
+   - Input that into our remote desktop app
    - While inside our Virtual machine we will install Wireshark
+      - Click blue icon by search bar
    - Within Wireshark, lets filter for ICMP traffic only
    - Retrieve the private IP address of the Ubuntu VM and attempt to ping it from within the Windows 10 VM and observe ping requests and replies within WireShark
    - From The Windows 10 VM, open command line or PowerShell and attempt to ping a public website such as www.google.com and observe the traffic in WireSharkObserve ping requests and replies within WireShark
@@ -49,11 +52,9 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 - Part 4 Observing DHCP Traffic
    - Back in Wireshark, filter for DHCP traffic 
    - From your Windows 10 VM, attempt to issue your VM a new IP address from the command line ipconfig /renew 
-
 - Part 5 Observing DNS Traffic
    - Back in Wireshark, filter for DNS traffic 
    - From your Windows 10 VM within a command line, use nslookup to see what google.com address is 
-
 - Part 6 Observing RDP Traffic
    - Back in Wireshark, filter for RDP traffic
    - Observe the constant flow of spam traffic
