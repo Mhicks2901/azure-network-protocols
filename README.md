@@ -55,7 +55,7 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
    - From your Windows 10 VM within a command line, use nslookup to see what google.com address is 
 
 - Part 6 Observing RDP Traffic
-   - Back in Wireshark, filter for RDP traffic  (tcp.port == 3389)
+   - Back in Wireshark, filter for RDP traffic
    - Observe the constant flow of spam traffic
      - Since the RDP is a protocol that is constantly showing you a live feed from one computer to another.
 
