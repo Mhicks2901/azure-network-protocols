@@ -61,7 +61,7 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
    <img src="https://i.imgur.com/9MstXjl.png"/>
 
    - Click the green button above the search bar to clear the search, and lets initiate a perpetual/non-stop ping from your Windows 10 VM to your Ubuntu VM
-     - Redo the same command an add a -t as this will continue to ping non stop
+     - Ping your private Ubuntu IP again an add a -t as this will continue to ping non stop
      <img src="https://i.imgur.com/KsDZ0Jc.png"/>
      
 - Part 3 Observing SSH Traffic
