@@ -60,7 +60,7 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
      - Observe ping requests and replies within WireShark
    <img src="https://i.imgur.com/9MstXjl.png"/>
 
-   - Click the green button above the search bar to clear the search, and lets initiate a perpetual/non-stop ping from your Windows 10 VM to your Ubuntu VM
+   - Click the green button above the search bar to clear the search, and lets initiate a perpetual from your Windows 10 VM to your Ubuntu VM
      - Ping your private Ubuntu IP again an add a -t as this will continue to ping non stop
      <img src="https://i.imgur.com/KsDZ0Jc.png"/>
      
