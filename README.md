@@ -66,15 +66,38 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
      
 - Part 3 Observing SSH Traffic
   - Back in Wireshark filter for SSH traffic
-  - From your Windows 10 VM, SSH into your Ubuntu Virtual Machine via its private IP address
+  <img src="https://i.imgur.com/NIdDh1i.png"/>
+  
+  - From your Windows 10 VM, Lets use SSH for your Ubuntu VM by using your username and private IP address from that VM
+    - After typing yes to continue to connect it will ask for your password which will not be shown typing
+    <img src="https://i.imgur.com/gu0lGbQ.png"/>
+    <img src="https://i.imgur.com/hANpoTD.png"/>
+ 
+    - Green text will indicate if your logged into your Ubuntu VM, typing exit will close the connection.
+    <img src="https://i.imgur.com/WVdKsJI.png"/>
+      
 - Part 4 Observing DHCP Traffic
-   - Back in Wireshark, filter for DHCP traffic 
-   - From your Windows 10 VM, attempt to issue your VM a new IP address from the command line ipconfig /renew 
+   - Back in Wireshark, filter for DHCP traffic
+     <img src="https://i.imgur.com/Imrf27V.png"/>
+     <img src="https://i.imgur.com/hANpoTD.png"/>
+     
+   - From your Windows 10 VM, lets issue your VM a new IP address from the command line ipconfig /renew
+     <img src="https://i.imgur.com/EqTTuL2.png"/>
+     - This may or may not disconnect your remote deskptop session.
+     <img src="https://i.imgur.com/7tmqE4g.png"/>
+     
 - Part 5 Observing DNS Traffic
-   - Back in Wireshark, filter for DNS traffic 
-   - From your Windows 10 VM within a command line, use nslookup to see what google.com address is 
+   - Back in Wireshark, filter for DNS traffic
+     <img src="https://i.imgur.com/4VwuSm6.png"/>
+     
+   - From your Windows 10 VM within a command line, use nslookup to see what google.com address is
+    <img src="https://i.imgur.com/8PU63l3.png"/>
+     
 - Part 6 Observing RDP Traffic
    - Back in Wireshark, filter for RDP traffic
-   - Observe the constant flow of spam traffic
-     - Since the RDP is a protocol that is constantly showing you a live feed from one computer to another.
+     <img src="https://i.imgur.com/Tycjl98.png"/>
+     <img src="https://i.imgur.com/RiUo5Zc.png"/>
+     
+   - Observe the constant flow of traffic
+     - RDP is a protocol that is constantly showing you a live feed from one computer to another.
 
